@@ -3,7 +3,7 @@
 using namespace std;
 
 /*
-    This function returns gcd(a, b) ans
+    This function returns gcd(a, b) and
     sets values of x, y such that: a * x + b * y = gcd(a, b) 
 */
 
