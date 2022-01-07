@@ -1,0 +1,23 @@
+Finding first few digits of a very large number of form a^n or n! 
+is quite hard to understand...
+
+Sample problems:
+    - https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1970
+    - http://acm.ustc.edu.cn/ustcoj/problem.php?id=1265
+    - https://www.hackerrank.com/contests/july13/challenges/ajourney/problem
+
+
+Resources:
+    - https://math.stackexchange.com/questions/1726777/computing-first-k-digits-and-last-k-digits-of-a-large-number-using-logarithm?rq=1
+    - https://math.stackexchange.com/questions/2178989/finding-digits-of-large-exponent
+    - https://codeforces.com/blog/entry/8576
+
+Let    A = a^n
+    => log A = n log a 
+    
+  now, A = 10^(log A)
+    => A = 10^(n log a)
+    => A = 10^(xxx.yyy)
+    => A = 10^(.yyy) * 10^xxx
+    which gives us a scientific representation as x.yz * 10^n 
+    thus we get the first few digits approximately. 
